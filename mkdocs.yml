@@ -1,0 +1,114 @@
+site_name: FastAPI Complete Guide 2026
+site_description: From Beginner to Professional Backend Architect. Build, test, and scale enterprise-grade web applications.
+site_author: Senior Backend Architect
+site_url: https://yourusername.github.io/Fastapi/
+
+# Repository integration
+repo_name: FastAPI-Complete-Guide-2026
+repo_url: https://github.com/yourusername/Fastapi
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - header.autohide
+
+# Social Profiles
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourusername
+  analytics:
+    provider: google
+    property: UA-XXXXXXXXX-X  # Analytics placeholder
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Python Foundations: getting-started/python_foundations.md
+  - FastAPI Fundamentals:
+    - Intro & Architecture: fundamentals/fastapi_fundamentals.md
+    - Core Features & Routers: fundamentals/core_fastapi.md
+    - Middleware Stack: fundamentals/middleware.md
+    - Structured Logging: fundamentals/logging_and_monitoring.md
+    - Background Tasks: fundamentals/background_tasks.md
+    - Production Architecture: fundamentals/production_architecture.md
+  - Data Validation:
+    - Pydantic V2 Models: pydantic/pydantic_v2.md
+    - Dependency Injection: pydantic/dependency_injection.md
+  - Security & Authentication:
+    - Enterprise Auth: authentication/security.md
+  - Persistence Layer:
+    - SQLAlchemy 2.0 (SQL): databases/sqlalchemy_databases.md
+    - MongoDB & Motor (NoSQL): databases/mongodb_motor.md
+    - Redis Caching & Limiters: redis/redis_integration.md
+  - Communication Channels:
+    - WebSockets Real-time: websocket/websockets.md
+    - GraphQL Strawberry API: graphql/graphql.md
+  - Testing & Quality:
+    - Pytest Async Suite: testing/testing.md
+  - Containerization:
+    - Docker & Compose: docker/docker.md
+    - Kubernetes Deployment: kubernetes/kubernetes.md
+  - Cloud Infrastructure:
+    - AWS Integration: aws/aws.md
+  - AI & Machine Learning:
+    - ML Model Serving: ai/ai_and_ml.md
+    - LLM & RAG Agentic Apps: ai/llm_applications.md
+  - Distributed Systems:
+    - Microservices Gateway: microservices/microservices.md
+  - Capstone Projects:
+    - 10 End-to-End Codebases: projects/end_to_end_projects.md
+  - Interview Prep & Resources:
+    - 150+ Technical Questions: interview-preparation/interview_prep.md
+    - Cheat Sheets & Checklists: interview-preparation/appendices.md
